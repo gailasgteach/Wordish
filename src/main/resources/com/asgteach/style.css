@@ -1,0 +1,144 @@
+
+.box {
+    -fx-spacing: 5;
+    -fx-alignment: center;
+    -fx-background-color: white;
+}
+
+.root {
+    -fx-button-base-color: #d3d6d9;
+    -fx-text-fill-base-color: black;
+    -fx-text-fill-alt-color: white;
+    -fx-partialmatch-color: #c5b565;
+    -fx-nomatch-color: #797c7e;
+    -fx-match-color: #78a86b;
+}
+
+/* Remove the annoying default focus on the buttons */
+.button {
+    -fx-focus-color: darkgray;
+    -fx-faint-focus-color: darkgray;
+}
+
+
+.tile > .label {
+    -fx-max-width:55;
+    -fx-max-height: 50;
+    -fx-font-family: "Arial";
+    -fx-text-fill: -fx-text-fill-base-color;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-alignment:center;
+    -fx-alignment:CENTER;
+    -fx-outer-border: -fx-button-base-color;
+    -fx-body-color: white;
+    -fx-background-color:
+        -fx-outer-border,
+        -fx-body-color;
+    -fx-background-insets: 0, 2;
+}
+
+.tile > .plain-letter:plain {
+    -fx-outer-border: -fx-button-base-color;
+    -fx-body-color: white;
+    -fx-text-fill: -fx-text-fill-base-color;
+}
+
+.tile > .displaying-letter:displaying {
+    -fx-outer-border: -fx-nomatch-color;
+    -fx-body-color: white;
+    -fx-text-fill: -fx-text-fill-base-color;
+}
+
+.tile > .matching-letter:matching {
+    -fx-outer-border: -fx-match-color;
+    -fx-body-color: -fx-match-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.tile > .nomatch-letter:nomatch {
+    -fx-outer-border: -fx-nomatch-color;
+    -fx-body-color: -fx-nomatch-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.tile > .partialmatch-letter:partialmatch {
+    -fx-outer-border: -fx-partialmatch-color;
+    -fx-body-color: -fx-partialmatch-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.flow > .button  {
+    -fx-background-color: -fx-button-base-color;
+    -fx-font-family: "Arial";
+    -fx-text-fill: -fx-text-fill-base-color;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.flow > .button:disabled {
+    -fx-opacity: 1.0 ;
+}
+
+.flow > .button:pressed {
+    -fx-background-color: -fx-button-base-color;
+}
+
+.flow > .button:armed {
+    -fx-background-color: -fx-nomatch-color;
+}
+
+.flow > .button:focused {
+    -fx-background-color: -fx-focus-color;
+}
+
+.flow > .matching-letter:matching {
+    -fx-button-base-color: -fx-match-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.flow > .partialmatch-letter:partialmatch {
+    -fx-button-base-color: -fx-partialmatch-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.flow > .nomatch-letter:nomatch {
+    -fx-button-base-color: -fx-nomatch-color;
+    -fx-text-fill: -fx-text-fill-alt-color;
+}
+
+.flow > .displaying-letter:displaying {
+/*    -fx-button-base-color: #d3d6d9;*/
+    -fx-background-color: -fx-button-base-color;
+    -fx-text-fill: -fx-text-fill-base-color;
+}
+
+.grid > .label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18px;
+    -fx-text-alignment:center;
+    -fx-alignment:CENTER;    
+}
+
+.chart-bar {
+    -fx-bar-fill: -fx-nomatch-color;
+}
+
+.chartlabel {
+    -fx-background-color: -fx-nomatch-color;
+    -fx-text-fill: white;
+    -fx-padding: 2 5 3 5;
+}
+
+.popup {
+    -fx-background-color: black;
+    -fx-padding: 10;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+    -fx-text-alignment:center;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}

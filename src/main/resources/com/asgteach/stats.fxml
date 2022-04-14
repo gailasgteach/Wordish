@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox fx:id="rootContainer" alignment="TOP_CENTER" prefHeight="736.0" prefWidth="414.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asgteach.StatsController">
+    <children>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+            <children>
+                <Button fx:id="switchButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToWordish" textAlignment="CENTER" textFill="#3875d0">
+                    <graphic>
+                        <FontIcon iconColor="darkblue" iconLiteral="mdi2c-close" iconSize="28" />
+                    </graphic>             
+                </Button>
+            </children>
+            <padding>
+                <Insets right="20.0" />
+            </padding>
+        </HBox>
+        <Label text="STATISTICS">
+            <font>
+                <Font name="Arial Bold" size="18.0" />
+            </font>
+        </Label>
+        <GridPane alignment="CENTER" maxHeight="74.0" maxWidth="374.0" minHeight="74.0" minWidth="374.0" prefHeight="74.0" prefWidth="374.0" vgap="15.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="69.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+                <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="67.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="statPlayed" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="statPercent" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="statCurrent" text="3" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="statMax" text="4" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Played" textAlignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Win %" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current Streak" wrappingWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Max Streak" textAlignment="CENTER" wrappingWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets left="30.0" right="5.0" />
+            </padding>
+        </GridPane>
+        <StackPane fx:id="pane" alignment="TOP_CENTER" maxHeight="400.0" maxWidth="374.0" minHeight="400.0" minWidth="374.0" prefHeight="400.0" prefWidth="374.0">
+            <children>
+                <BarChart fx:id="barChart">
+                    <xAxis>
+                        <NumberAxis minorTickVisible="false" side="BOTTOM" tickMarkVisible="false" tickUnit="1.0" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                        <CategoryAxis fx:id="yAxis" side="LEFT" />         
+                    </yAxis>
+                </BarChart>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Label" visible="false">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
