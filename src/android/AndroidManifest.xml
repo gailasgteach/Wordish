@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<manifest xmlns:android='http://schemas.android.com/apk/res/android' package='com.asgteach.WordishApp' android:versionCode='1' android:versionName='1.0'>
+<manifest xmlns:android='http://schemas.android.com/apk/res/android' package='com.asgteach.Wordish' android:versionCode='1' android:versionName='1.0'>
     <supports-screens android:xlargeScreens="true"/>
     <application android:label='Wordish' android:icon="@mipmap/ic_launcher">
         <activity android:name='com.gluonhq.helloandroid.MainActivity'
