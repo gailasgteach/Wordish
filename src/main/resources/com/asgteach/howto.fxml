@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<VBox fx:id="rootContainer" alignment="TOP_CENTER" maxHeight="736.0" maxWidth="414.0" minHeight="736.0" minWidth="414.0" prefHeight="736.0" prefWidth="414.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asgteach.HowToController">
+<VBox alignment="TOP_CENTER" maxHeight="736.0" maxWidth="414.0" minHeight="736.0" minWidth="414.0" prefHeight="736.0" prefWidth="414.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asgteach.HowToController">
     <children>
         <HBox alignment="CENTER_RIGHT" prefWidth="200.0">
             <children>
@@ -21,10 +21,10 @@
                         <Font name="Arial" size="18.0" />
                     </font>
                     <padding>
-                        <Insets right="95.0" />
+                        <Insets right="120.0" />
                     </padding>
                 </Label>
-                <Button fx:id="switchButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToWordish" textAlignment="CENTER" textFill="#3875d0">
+                <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToWordish" textAlignment="CENTER" textFill="#3875d0">
                     <graphic>
                         <FontIcon iconColor="darkblue" iconLiteral="mdi2c-close" iconSize="28" />
                     </graphic>             
@@ -33,7 +33,7 @@
         </HBox>
         <VBox alignment="TOP_CENTER" maxHeight="570.0" maxWidth="413.0" minHeight="570.0" minWidth="413.0" prefHeight="570.0" prefWidth="413.0" spacing="20.0">
             <children>
-                <VBox prefHeight="200.0" prefWidth="100.0">
+                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
                     <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
                             <children>
@@ -146,9 +146,9 @@
                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" is not in the word in any spot." />
                             </children>
                         </HBox>
+                  <Line endX="250.0" startX="-100.0" />
                     </children>
                 </VBox>
-            <Line endX="250.0" startX="-100.0" />
                 <HBox alignment="BASELINE_LEFT" prefHeight="100.0" prefWidth="200.0">
                     <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To play a brand new game, hit the ">
@@ -156,7 +156,7 @@
                                 <Font name="Arial" size="14.0" />
                             </font>
                         </Text>
-                        <Label fx:id="replayLabel" textFill="#3875d0">
+                        <Label textFill="#3875d0">
                             <graphic>
                                 <FontIcon iconColor="darkblue" iconLiteral="mdi2r-replay" iconSize="28" />
                             </graphic>
@@ -171,6 +171,6 @@
         </VBox>
     </children>
     <padding>
-        <Insets bottom="20.0" left="25.0" right="20.0" top="20.0" />
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 </VBox>

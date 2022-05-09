@@ -30,6 +30,9 @@ $ mvn -Pios gluonfx:nativerun
 ```
 
 ## Build and Run on connected Android device
+[currently you must run Android targets with
+Java 11 -- this means no Records and no 
+pattern matching Switch statement]
 
 ```bash
 $ mvn -Pandroid gluonfx:build

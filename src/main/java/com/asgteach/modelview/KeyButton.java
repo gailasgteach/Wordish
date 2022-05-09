@@ -42,7 +42,7 @@ public class KeyButton extends Button {
     };
     
     public void setLetterDisplay(LetterStyle.DisplayType labelType) {
-        // this invokes invalided()
+        // this invokes invalidated()
         this.letterDisplay.set(labelType);
     }
 

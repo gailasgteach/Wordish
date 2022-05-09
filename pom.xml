@@ -8,10 +8,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <javafx.version>17.0.1</javafx.version>
+        <javafx.version>18</javafx.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
-        <gluonfx.maven.plugin.version>1.0.12</gluonfx.maven.plugin.version>
-        <attach.version>4.0.13</attach.version>
+        <gluonfx.maven.plugin.version>1.0.13</gluonfx.maven.plugin.version>
+        <attach.version>4.0.14</attach.version>
         <gluonfx.target>host</gluonfx.target>
         <main.class>com.asgteach.WordishApp</main.class>
     </properties>
@@ -113,7 +113,7 @@
                         <list>com.asgteach.modelview.LetterStyle</list>
                         <list>com.asgteach.modelview.WordPopup</list>
                         <list>com.asgteach.service.WordData</list>
-<!--                        <list>org.kordamp.ikonli.javafx.FontIcon</list>-->
+                        <list>org.kordamp.ikonli.javafx.FontIcon</list>
                     </reflectionList>
                     <resourcesList>
                         <list>com.asgteach.service.wordlist.txt</list>

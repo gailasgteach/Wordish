@@ -109,7 +109,7 @@ public class WordishController {
                 .filter(button -> button.getText().length() == 1)
                 .collect(Collectors.toMap(KeyButton::getText, Function.identity()));
         
-        resetButton.disableProperty().bind(gameReset.not());
+        //resetButton.disableProperty().bind(gameReset.not());
         statsButton.disableProperty().bind(gameReset.not());
         infoButton.disableProperty().bind(gameReset.not());
         

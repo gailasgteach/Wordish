@@ -5,26 +5,21 @@ import com.asgteach.modelview.LetterLabel;
 import com.asgteach.modelview.LetterStyle.DisplayType;
 import java.io.IOException;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.TilePane;
-import javafx.scene.layout.VBox;
 
 
 public class HowToController {
 
-    @FXML
-    private VBox rootContainer;
     @FXML
     private TilePane tilepane1;
     @FXML
     private TilePane tilepane2;
     @FXML
     private TilePane tilepane3;
-    @FXML
-    private Label replayLabel;
-    @FXML
-    private Button switchButton;
+//    @FXML
+//    private Label replayLabel;
+//    @FXML
+//    private Button switchButton;
     
     public void initialize() {
 //        replayLabel.setText(new String(Character.toChars(Integer.parseInt("F0459", 16))));
