@@ -3,15 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.asgteach</groupId>
     <artifactId>Wordish</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.2</version>
+
     <name>Wordish</name>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <javafx.version>18</javafx.version>
-        <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
-        <gluonfx.maven.plugin.version>1.0.13</gluonfx.maven.plugin.version>
-        <attach.version>4.0.14</attach.version>
+        <javafx.version>20</javafx.version>
+        <charm.version>6.2.3</charm.version>
+        <attach.version>4.0.19-SNAPSHOT</attach.version>
+        <javafx.plugin.version>0.0.8</javafx.plugin.version>
+        <gluonfx.plugin.version>1.0.20-SNAPSHOT</gluonfx.plugin.version>
         <gluonfx.target>host</gluonfx.target>
         <main.class>wordish/com.asgteach.WordishApp</main.class>
     </properties>
@@ -75,7 +78,7 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>${javafx.maven.plugin.version}</version>
+                <version>${javafx.plugin.version}</version>
                 <configuration>
                     <mainClass>${main.class}</mainClass>
                 </configuration>
@@ -84,9 +87,10 @@
             <plugin>
                 <groupId>com.gluonhq</groupId>
                 <artifactId>gluonfx-maven-plugin</artifactId>
-                <version>${gluonfx.maven.plugin.version}</version>
+                <version>${gluonfx.plugin.version}</version>
                 <configuration>
                     <target>${gluonfx.target}</target>
+
                     <mainClass>${main.class}</mainClass>
                     <verbose>true</verbose>
                     <reflectionList>
@@ -138,4 +142,21 @@
         </profile>
     </profiles>
     
+    <repositories>
+        <repository>
+            <id>gluon-releases</id>
+            <url>https://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
 </project>
